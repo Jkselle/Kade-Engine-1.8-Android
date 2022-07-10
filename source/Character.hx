@@ -538,6 +538,25 @@ class Character extends FlxSprite
 							playAnim('danceRight');
 						else
 							playAnim('danceLeft');
+					
+
+	
+
+				tex = Paths.getSparrowAtlas('jvs', 'shared', true);
+
+				frames = tex;
+
+				animation.addByPrefix('idle', 'Dad idle dance', 24, false);
+
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24, false);
+
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24, false);
+
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24, false);
+
+				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24, false);
+
+				animation.addByIndices('idleLoop', "Dad idle dance", [11, 12], "", 12, true);
 					}
 				case 'spooky':
 					if (!animation.curAnim.name.startsWith('sing'))
